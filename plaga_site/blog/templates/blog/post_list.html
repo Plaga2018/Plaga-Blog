@@ -1,19 +1,18 @@
-{% extends "blog/base.html" %}
-<!-- HOME PAGE -->
-<!-- Uses the PostListView which lists out all the posts -->
+{% extends 'blog/base.html' %}
+
 {% block content %}
 <div class="centerstage">
-  {% for post in post_list %}
-  <div class="post">
-    <h1> <a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a> </h1>
-    <div class="date">
-      <p>Published on: {{post.published|date:"D M Y"}}</p>
-    </div>
 
-    <a href="{% url 'post_detail' pk=post.pk %}">Comments: {{ post.approve_comments.count }}</a>
 
-  </div>
+    {% for post in post_list %}
+        <div class="post">
 
-  {% endfor %}
+            <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
+            <div class="date">
+                <p>Published on: {{ post.published_date|date:"D M Y"}}</p>
+            </div>
+            <a href="{% url 'post_detail' pk=post.pk %}">Comments: {{ post.approve_comments.count }}</a>
+        </div>
+    {% endfor %}
 </div>
 {% endblock %}
