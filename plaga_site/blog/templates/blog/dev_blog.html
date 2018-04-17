@@ -5,12 +5,118 @@
 
 <!-- <div class="jumbotron plagatron"> -->
 <div class="row  devblog">
-  <h2>Whats going on with Plaga?</h2>
+  <h2 class="textred">Whats with this game called Plaga?</h2>
   <p>First, we want to say thank you for visiting our site and taking the time to see what we are trying
 to accomplish here. This blog will follow the development of the game Plaga that the dude is currently
 hard at work learning and building the game from scratch using Unity.</p>
 </div>
-<h2></h2>
-<p></p>
+
+<!-- <div class="row devblog">
+  <h3></h3>
+  <h4>Learned:</h4>
+  <ul>
+    <li></li>
+  </ul>
+  <h4>Features</h4>
+  <ul>
+    <li></li>
+  </ul>
+</div> -->
+<div class="row devblog">
+  <h3 class="textred">April 12, 2018</h3>
+
+  <h4>Features</h4>
+  <ul>
+    <li>Added skeleton animations</li>
+    <li>Added an attackTrigger script for all enemies</li>
+    <li>Added enemy patrol paths</li>
+    <li>Added enemy death animations</li>
+    <li>Enemies no longer take damage when dead</li>
+    <li>Added player cape animations</li>
+  </ul>
+</div>
+
+<div class="row devblog">
+  <h3 class="textred">April 1, 2018</h3>
+  <h4>Features</h4>
+  <ul>
+    <li>Added audio for dog taking damage SFX</li>
+    <li>Added a skeleton enemy that attacks when the player is inside of the skeleton’s hitbox</li>
+    <li>Added a bat animation</li>
+    <li>Added a pathing plugin for the airborne enemies so that they can chase the player without</li>
+    <li>hitting into environment objects</li>
+    <li>Added a jump animation</li>
+    <li>Added a jump attack</li>
+    <li>Added a swing delay for the jump attack</li>
+  </ul>
+</div>
+
+<div class="row devblog">
+  <h3 class="textred">March 19, 2018</h3>
+  <h4>Features</h4>
+  <ul>
+    <li>Added the ability to follow the player vertically and not only horizontally. The camera moves smoother now</li>
+    <li>Adjusted the camera for even smoother functionality</li>
+    <li>Added interpolation to the player character to fix a jitter issue</li>
+    <li>Added a die function that will reset the scene for when the current health <= 0</li>
+    <li>Added player health HUD</li>
+    <li>Added enemy tags. Objects with this tag can damage the player if the player enters the objects hit box</li>
+    <li>Added spikes</li>
+    <li>Added a knockback script that is triggered when the player takes damage</li>
+    <li>Added music and SFX</li>
+    <li>Added art for the 3rd scene</li>
+    <li>Added a better damage animation</li>
+    <li>Added a trigger to play the taking damage animation</li>
+  </ul>
+</div>
+
+<div class="row devblog">
+  <h3 class="textred">March 5, 2018</h3>
+
+  <h4>Features</h4>
+  <ul>
+    <li>Added basic attack animations and scripts</li>
+    <li>Added a jump action for the player character</li>
+    <li>Added the ability to adjust player character’s jump height by holding the jump button down longer</li>
+    <li>Added a transition event between scene 1 and scene 2</li>
+    <li>Added a fade effect to the transition</li>
+    <li>Added a pit that the player must fall into in order for them to start the game</li>
+  </ul>
+</div>
+
+<div class="row devblog">
+  <h3 class="textred">Feb 12, 2018</h3>
+  <h4>Learned:</h4>
+  <ul>
+    <li>How to create a script that will remove cloned objects that are no longer in use</li>
+    <li>How to set the background as a child of the main camera so that it would scroll</li>
+  </ul>
+  <h4>Features:</h4>
+  <ul>
+    <li>Added a spike trap that will damage the player and send them back to a checkpoint/respawn area</li>
+    <li>Added particle effects for when the player character is injured</li>
+    <li>Added new art for characters and environment</li>
+    <li>Added a jump, idle, and walking animation</li>
+  </ul>
+</div>
+
+<div class="row devblog">
+    <h3 class="textred">January 11, 2018</h3>
+    <h4>Learned:</h4>
+    <ul>
+      <li>How to make animations in Unity by attaching animations to the player character using C#</li>
+      <li>How to use 2D detection bodies for players and environment objects</li>
+      <li>How to manipulate animations in a 2D Unity environment</li>
+    </ul>
+    <h4>Features:</h4>
+    <ul>
+      <li>Added Script to focus the camera on the player character</li>
+      <li>Added a variable “followAhead” for the camera to go a bit further in the players viewing</li>
+      <li>direction So that they can see what is in front of them more clearly.</li>
+      <li>Added a kill plane for when a player falls into a pit.</li>
+      <li>Added a default spawn position as well as checkpoints that update as the player passes them.</li>
+      <li>Added a respawn delay</li>
+    </ul>
+</div>
 <!-- </div> -->
 {% endblock %}
