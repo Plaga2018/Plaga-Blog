@@ -14,7 +14,7 @@ body {
   background-image: image("/static/img/sunsetbg.png");
 } */
 .plagatron{
-  background-color: rgb(157, 160, 165);
+  background-color: rgb(219, 217, 224);
   border:solid black 3px;
   margin-bottom: auto;
 }
@@ -23,7 +23,7 @@ body {
 }
 
 .devblog{
-  background-color: rgb(165, 169, 175);
+  background-color: rgb(219, 217, 224);
   padding: 10px;
   margin-bottom: 10px;
 }
@@ -90,12 +90,23 @@ body {
   font-weight: bold;
 }
 
+.carouselformatting{
+  margin-top:20px;
+  margin-bottom:20px;
+}
+
 .mydemos {
   font-family: 'IM Fell English SC', serif;
-  margin-top: 3%;
+  padding-top:50px;
+
+  padding-bottom:50px;
+
   background-color: rgb(219, 217, 224);
+}
 
-
+.demoiframe{
+  margin-right:50;
+  padding-right:10px;
 }
 .feat_heading{
   color: #7a2f2f;
