@@ -2,7 +2,7 @@ from django.db import models
 from django.utils import timezone
 from django.core.urlresolvers import reverse
 
-
+# Model for our blog post, contains all the information about the post
 class Post(models.Model):
     author = models.ForeignKey('auth.User')
     title = models.CharField(max_length=200)
@@ -10,10 +10,12 @@ class Post(models.Model):
     created_date = models.DateTimeField(default=timezone.now)
     published_date = models.DateTimeField(blank=True, null=True)
 
+    #set the date and commit to the database
     def publish(self):
         self.published_date = timezone.now()
         self.save()
 
+    # pk is the PRIMARY KEY and is added automatically by django
     def approve_comments(self):
         return self.comments.filter(approved_comment=True)
 

@@ -2,6 +2,7 @@
 
 {% block content %}
 
+<div class="container centerstage">
 
         <h1 class='posttitle loader'>{{ post.title }}</h1>
 
@@ -26,6 +27,8 @@
 
   <hr>
   <a class="btn btn-primary btn-comment" href="{% url 'add_comment_to_post' pk=post.pk %}">Add comment</a>
+
+</div>
   <div class="container">
 
 

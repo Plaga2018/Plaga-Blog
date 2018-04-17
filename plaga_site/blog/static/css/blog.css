@@ -1,9 +1,46 @@
 
 
-.techfont{
-  font-family: 'Archivo Narrow', sans-serif;
-  font-size: 1.5em;
+body {
+  background-color: black;
+  font-family: 'IM Fell English SC', serif;
+  /* font-family: 'IM Fell English SC', serif; */
+
+  /* background-image: url('/static/img/sunsetbg.png') ;
+  background-repeat: repeat-y;
+  background-size:100%; */
+}
+
+/* #plaga_body{
+  background-image: image("/static/img/sunsetbg.png");
+} */
+.plagatron{
+  background-color: rgb(157, 160, 165);
+  border:solid black 3px;
+  margin-bottom: auto;
+}
+.textred{
+  color: #7a2f2f;
+}
+
+.devblog{
+  background-color: rgb(157, 160, 165);
+  padding: 10px;
   margin-bottom: 10px;
+}
+
+.bigbrand{
+  font-size: 1.5em;
+  color: #7a2f2f;
+}
+
+.plagafont {
+
+  color: black;
+  font-size: 1.5em;
+}
+.plagafontred {
+  color: #7a2f2f;
+  font-size: 1.7em;
 }
 
 .postdate{
@@ -11,69 +48,109 @@
 }
 
 .posttitle{
+  color: white;
   font-family: 'Orbitron', sans-serif;
   font-size: 3em;
   text-align: center;
 }
 
 .postcontent{
-  font-family: 'Orbitron', sans-serif;
+  font-family: 'Archivo Narrow', sans-serif;
   font-size: 1.5em;
 }
 
-.centerstage{
-  margin-left: auto;
-  margin-right: auto;
+.centerimg {
+
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      padding-bottom: 7%;
+      width: 65%;
+
+
 }
 
-.btn-comment{
-  position: absolute;
-  right: 0px;
+.centerstage{
+
+  /* margin-left: auto;
+  margin-right: auto; */
+
 }
 
 .bigbrand{
   font-size: 1.5em;
-}
-
-.content{
-
-}
-
-/*COLOR CHANGER*/
-/*Credit and Source: http://codepen.io/thapliyalshivam/pen/dvgXVO*/
-.loader{
-  filter:hue-rotate(0deg);
-  color: linear-gradient(45deg,#0f8,#08f);
-  animation:hue 5000ms infinite linear;
+  color: #7a2f2f;
 }
 
 
-@keyframes spinify {
-  0% {
-    transform: translate(0px,0px);
-
-  }
-  33% {
-    transform: translate(0px,24px);
-    border-radius:100%;
-    width:10px;
-    height:10px;
-
-  }
-   66% {
-    transform:translate(0px,-16px);
-  }
-
-   88% {
-    transform:translate(0px,4px);
-
-  }
-  100% {
-    transform:translate(0px,0px);
-  }
+.text-muted{
+  color: black;
+  font-size: 12px;
+  font-weight: bold;
 }
-@keyframes hue{
-  0%{filter: hue-rotate(0deg);}
-  100%{filter:hue-rotate(360deg);}
+
+.mydemos {
+  font-family: 'IM Fell English SC', serif;
+  margin-top: 3%;
+  background-color: rgb(219, 217, 224);
+
+
+}
+.feat_heading{
+  color: #7a2f2f;
+  font-style:oblique;
+  font-weight: bold;
+}
+
+.plagalogo{
+  font-size: 1.5em;
+  color: #7a2f2f;
+}
+
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+
+    color: #7a2f2f;
+}
+
+.plagadefmuted{
+  color: rgb(97, 99, 104);
+}
+
+.plagarowcontent{
+  border:solid #7a2f2f 12px;
+height: 50%;
+margin-bottom:0px;
+  /* border-top: solid white 10px; */
+
+}
+
+.navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+.row.content {height:1000px}
+
+/* Set gray background color and 100% height */
+.sidenav {
+  padding-top: 20px;
+  background-color: black
+  height: 100%;
+}
+
+/* Set black background color, white text and some padding */
+footer {
+  background-color: #555;
+  color: white;
+  padding: 15px;
+}
+
+
+
+#grad1 {
+  height: 100%;
+  background:black;
 
 }

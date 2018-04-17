@@ -11,8 +11,15 @@ from django.views.generic import (TemplateView,ListView,
 from django.urls import reverse_lazy
 from django.contrib.auth.mixins import LoginRequiredMixin
 
+
+class IndexView(TemplateView):
+    template_name = 'index.html'
+
 class AboutView(TemplateView):
     template_name = 'about.html'
+
+class DemosView(TemplateView):
+    template_name = 'demos.html'
 
 class PostListView(ListView):
     model = Post
@@ -23,6 +30,8 @@ class PostListView(ListView):
 class PostDetailView(DetailView):
     model = Post
 
+class DevBlogView(TemplateView):
+    template_name = 'dev_blog.html'
 
 class CreatePostView(LoginRequiredMixin,CreateView):
     login_url = '/login/'
