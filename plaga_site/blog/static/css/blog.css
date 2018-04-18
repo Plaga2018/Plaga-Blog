@@ -43,6 +43,12 @@ font-family: 'IM Fell English SC', serif;
   margin-top:20px;
   margin-bottom: auto;
 }
+.postatron{
+  /* padding-left:20px; */
+  background-color: rgb(219, 217, 224);
+  border:solid black 3px;
+  margin-bottom: auto;
+}
 .textred{
   color: #7a2f2f;
 }
