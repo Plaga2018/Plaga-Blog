@@ -40,19 +40,19 @@
         <li> <a href="{% url 'dev_blog' %}">Dev Blog</a></li>
         <li><a href="{% url 'demos' %}">Game Demos</a></li>
         <!-- <li><a href="https://github.com/Plaga2018/Plaga-Blog">Github</a></li> -->
-        <li><a href="{% url 'post_list' %}">Post Times</a></li>
+        <li><a href="{% url 'post_list' %}">Completion Times</a></li>
 
       </ul>
 
       <ul class="nav navbar-nav navbar-right">
         {% if user.is_authenticated %}
         <li>
-          <a href="{% url 'post_new' %}" >New Post</a>
+          <a href="{% url 'post_new' %}" >Post New Time</a>
         </li>
 
-        <li>
-          <a href="{% url 'post_draft_list' %}">Drafts</a>
-        </li>
+        <!-- <li>
+          <a href="{# url 'post_draft_list' #}">Drafts</a>
+        </li> -->
         <li>
           <a href="{% url 'logout' %}" >Log out</a>
         </li>

@@ -1,15 +1,19 @@
 {% extends 'blog/base.html' %}
 
 {% block content %}
-    <h1>New post</h1>
+<div class="plagatron"style="padding-left: 20px; padding-bottom:20px;">
+  <h1 class="textred">Enter Your New Time</h1>
+  <p style="font-size:1.5em">Enter your time into the title box in the format of = minutes:seconds.ms</p>
+  <form method="POST" class="post-form">
+  {% csrf_token %}
+  {{form.as_p}}
+    <button type="submit" class="save">Save</button>
 
-    <form method="POST" class="post-form">
-    {% csrf_token %}
-    {{form.as_p}}
-    <button type="submit" class="save btn btn-default">Save</button>
 
-    </form>
+  </form>
 
-    <script>var editor = new MediumEditor('.editable');</script>
+  <script>var editor = new MediumEditor('.editable');</script>
+
+</div>
 
 {% endblock %}

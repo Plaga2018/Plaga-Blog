@@ -9,7 +9,12 @@
       <h1 class="col-md-9 push-md-3">{{ post.author }} - <span style="color:#7a2f2f;">{{ post.title }}</span></h1>
 
       <div style="float:right; margin-top:25px; margin-right:20px;">
-          <p class="date">{{ post.published_date|date:"D M Y"}}</p>
+          <p class="date">{{ post.published_date|date:"D M Y"}}
+            <!-- {% if user.is_authenticated %}
+                <a class="btn btn-primary" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+                <a class="btn btn-primary" href="{% url 'post_remove' pk=post.pk %}"><span class="glyphicon glyphicon-remove"></span></a>
+            {% endif %} -->
+          </p>
       </div>
 
     </div>

@@ -207,8 +207,16 @@ a:link{
   padding:5px;
 }
 .plagabuttons{
-  background-color: rgb(90, 90 ,90);
-  padding:10px;
+  background-color: rgb(85, 85 ,85);
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
 }
 .postauthor{
 
