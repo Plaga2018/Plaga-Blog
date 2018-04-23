@@ -103,7 +103,12 @@ font-family: 'IM Fell English SC', serif;
 
 
 }
+.centervid {
+  display: block;
+  margin-left:auto;
+  margin-right:auto;
 
+}
 .centerstage{
 
   margin-left: auto;
